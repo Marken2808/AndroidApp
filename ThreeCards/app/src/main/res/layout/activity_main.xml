@@ -26,23 +26,23 @@
         android:background="#ff3300">
 
         <ImageView
-            android:id="@+id/card1"
+            android:id="@+id/cardImg1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/hearts_2"/>
+            android:src="@drawable/empty_card"/>
 
         <ImageView
-            android:id="@+id/card2"
+            android:id="@+id/cardImg2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:src="@drawable/hearts_10"/>
+            android:src="@drawable/empty_card"/>
 
         <ImageView
-            android:id="@+id/card3"
+            android:id="@+id/cardImg3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -51,10 +51,47 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearControl"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5">
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/buttonResult"
+            android:onClick="showResult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#fff"/>
+
+        <Button
+            android:id="@+id/buttonAgain"
+            android:onClick="playAgain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0066ff"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.75">
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="HELLO"
+            android:textSize="100dp"
+            android:gravity="center"
+            android:textColor="#fff" />
     </LinearLayout>
 
 </LinearLayout>
