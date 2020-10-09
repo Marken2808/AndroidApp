@@ -7,7 +7,8 @@
     android:background="@drawable/background"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:weightSum="2">
+    android:weightSum="2"
+    android:padding="40dp">
 
     <TextView
         android:layout_weight="1"

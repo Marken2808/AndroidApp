@@ -7,20 +7,23 @@
     tools:context=".SignInActivity"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="20dp"
+    android:padding="40dp"
     android:background="@drawable/background">
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email or Username"
-        android:id="@+id/username" />
+        android:gravity="center"
+        android:id="@+id/username"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:id="@+id/password" />
+        android:gravity="center"
+        android:id="@+id/password"/>
 
     <Button
         android:layout_width="match_parent"

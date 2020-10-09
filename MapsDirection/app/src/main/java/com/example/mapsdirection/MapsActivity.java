@@ -92,7 +92,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private String getRequestUrl(LatLng from, LatLng to){
-
         String str_from = "origin=" + from.latitude + "," +from.longitude;
         String str_to = "destination=" + to.latitude + "," +to.longitude;
         String sensor = "sensor=false";
