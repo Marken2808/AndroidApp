@@ -11,12 +11,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Out"
-        android:gravity="center"
+        android:layout_gravity="top"
         android:id="@+id/signOut"/>
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinnerType"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:drawable/editbox_background"/>-->
 
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search place"
+        android:iconifiedByDefault="false"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginBottom="5dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/borders" >
+
+    </SearchView>
+
+
+
 </FrameLayout>
